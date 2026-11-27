@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <script src="content.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <section>
+      <p data-text="introEyebrow"></p>
+      <h1 data-text="title"></h1>
+      <p data-text="subtitle"></p>
+      <button id="openBtn" data-text="openStory"></button>
+      <button id="musicBtn"></button>
+    </section>
+
+    <div id="story" hidden>
+      <section>
+        <h2 data-text="videosTitle"></h2>
+        <p data-text="videosDescription"></p>
+        <video src="assets/video_2026-11-28_01-31-11.mp4" controls playsinline></video>
+        <p data-text="videoCaption1"></p>
+        <video src="assets/video_2026-11-28_01-32-17.mp4" controls playsinline></video>
+        <p data-text="videoCaption2"></p>
+        <video src="assets/video_2026-11-28_01-33-18.mp4" controls playsinline></video>
+        <p data-text="videoCaption3"></p>
+      </section>
+
+      <section>
+        <h2 data-text="photosTitle"></h2>
+        <p data-text="photosDescription"></p>
+        <img src="assets/photo_2025-09-11_15-39-57.jpg" alt="Фото">
+        <p data-text="photoCaption1"></p>
+        <img src="assets/photo_2025-09-30_17-39-58.jpg" alt="Фото">
+        <p data-text="photoCaption2"></p>
+      </section>
+
+      <section>
+        <h2 data-text="frogTitle"></h2>
+        <p data-text="frogDescription"></p>
+        <img src="assets/frog.jpg" alt="Лягушка">
+        <p><button id="playBtn" data-text="frogPlay"></button></p>
+        <audio id="frogAudio" preload="none"></audio>
+      </section>
+
+      <section>
+        <h2 data-text="timerTitle"></h2>
+        <p id="timer"></p>
+      </section>
+
+      <section>
+        <img src="assets/chervyak.jpg" alt="Червяк">
+        <h2 data-text="finalTitle"></h2>
+        <p data-text="finalDescription"></p>
+        <button id="finalBtn" data-text="finalButton"></button>
+        <p id="finalMessage" hidden></p>
+      </section>
+
+      <footer data-text="footer"></footer>
+    </div>
+  </main>
+  <audio id="song" preload="none" loop></audio>
+</body>
+</html>
